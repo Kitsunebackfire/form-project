@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 98vh;
+  margin: 0;
+}
+
+.mainContainer {
+  background-color: white;
+  align-self: center;
+  justify-self: center;
+  overflow: hidden;
+  width: 400px;
+  min-width: 400px;
+  height: 560px;
+  min-height: 560px;
+  margin: 0;
+  border-radius: 5px;
+}
+
+#theForm {
+  padding: 10px 30px;
+}
+
+.header {
+  text-align: center;
+  background-color: red;
+  border-bottom: 1px solid blue;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.header h1 {
+  margin: 0;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 1px;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.inputContainer input {
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.inputContainer.error input {
+  border: 2px solid red;
+}
+
+.inputContainer.error i.errorMark {
+  color: red;
+  visibility: visible;
+}
+
+.inputContainer.success input {
+  border: 2px solid rgb(6, 255, 6);
+}
+
+.inputContainer.success i.successMark {
+  color: rgb(6, 255, 6);
+  visibility: visible;
+}
+
+.inputContainer small {
+  visibility: hidden;
+  color: red;
+}
+
+.inputContainer i {
+  visibility: hidden;
+  position: absolute;
+  bottom: 25px;
+  right: 12px;
+}
+
+#theForm button {
+  background-color: #8e44ad;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
